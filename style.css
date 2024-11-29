@@ -1,0 +1,113 @@
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background: #d4ade4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #efaff9;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.521);
+}
+
+/* Profile Section */
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #6a11cb;
+}
+
+.profile-info h1 {
+  font-size: 35px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  margin: 15px 0;
+  color: #562292;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #7d51ab; }
+  100% { text-shadow: 0 0 20px #6f1bc9; }
+}
+
+.profile-info .tagline {
+  font-size: 18px;
+  font-weight: 300;
+  color: #876d90;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-info .highlight {
+  color: #6c19c6;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 24px;
+  color: #530559;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading-line {
+  width: 100px;
+  height: 4px;
+  background: #7c1de2;
+  margin: 10px 0 20px;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.skill-card {
+  background: #f4def5;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(17, 16, 16, 0.1);
+}
+
+.skill-card h3 {
+  color: #6a1cbc;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #7834c6;
+}
+
+.contact-section .contact a {
+  color: #6a11cb;
+  text-decoration:none;
+  
+}
+
+.contact-section .contact a:hover {
+  text-decoration: underline;
+}
