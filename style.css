@@ -1,19 +1,26 @@
 body {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
-  background: #d4ade4;
+  background: rgb(253, 231, 252);
   color: #333;
   line-height: 1.6;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  overflow-y: auto; 
 }
 
 .resume-container {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px;
   background: #efaff9;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.521);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Profile Section */
@@ -31,7 +38,7 @@ body {
 
 .profile-info h1 {
   font-size: 35px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 15px 0;
   color: #562292;
   animation: glow 2s infinite alternate;
@@ -46,7 +53,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: #876d90;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .profile-info .highlight {
@@ -90,7 +97,7 @@ h2 {
 
 .skill-card h3 {
   color: #6a1cbc;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -104,10 +111,30 @@ h2 {
 
 .contact-section .contact a {
   color: #6a11cb;
-  text-decoration:none;
-  
+  text-decoration: none;
 }
 
 .contact-section .contact a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-info h1 {
+    font-size: 28px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
 }
